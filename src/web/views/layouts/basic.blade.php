@@ -10,5 +10,8 @@
 </head>
 <body>
     @yield('content')
+
+    <!-- Xtra required scripts -->
+    @include("xtra-view::includes.js-parts")
 </body>
 </html>

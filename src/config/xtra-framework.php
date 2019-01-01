@@ -5,6 +5,7 @@
  return [
      /**
       * Currently only bootstrap is provided, other CSS frameworks will be added later
+      * One of this value: bootstrap
       */
      "css" => "bootstrap",
 

@@ -2,7 +2,8 @@
   "name": "xtra",
   "version": "0.0.1",
   "devDependencies": {
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.2"
   },
   "dependencies": {}
 }

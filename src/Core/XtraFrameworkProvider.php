@@ -19,6 +19,9 @@ class XtraFrameworkProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Include helpers.php
+        require_once __DIR__.'/../helpers/helpers.php';
+
         // Include define.php
         require_once __DIR__.'/../web/define.php';
 
@@ -31,6 +34,10 @@ class XtraFrameworkProvider extends ServiceProvider
         // This will register for vendor:publish for config customization
         $this->publishes([
             __DIR__.'/../config/xtra-framework.php' => config_path('xtra-framework.php'),
+        ]);
+
+        $this->publishes([
+            __DIR__.'/../web/assets' => public_path('xtra-assets'),
         ]);
     }
 

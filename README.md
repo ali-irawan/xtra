@@ -14,7 +14,13 @@ This framework is intended to help build most usually needed features
 ## Requirements
 
 * Laravel (5.x)
-* PHP 7.0+
+* PHP 7.1.3+
+
+## Dependencies
+
+* [Bootstrap CSS](https://getbootstrap.com/) version 4.2.1
+* [jQuery](https://jquery.com/) version 3.2
+
 
 ## Contributors
 [Ali Irawan](https://github.com/ali-irawan) ([boylevantz@gmail.com](mailto:boylevantz@gmail.com))
