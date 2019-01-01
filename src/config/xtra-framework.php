@@ -15,9 +15,16 @@
       */
      "modules" => [
          "login" => "/xtra-login",
+         "logout" => "/xtra-logout",
+         "home" => "/xtra-home",
          "tenant" => "/xtra-tenant",
          "role" => "/xtra-role",
          "user" => "/xtra-user",
          "user-group" => "/xtra-user-group"
+     ],
+
+     "home-page" => [
+         "navbar" => true,
+         "navbar-type" => 'top',
      ]
  ];

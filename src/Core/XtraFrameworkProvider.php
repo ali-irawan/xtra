@@ -9,6 +9,7 @@
 namespace Xtra\Core;
 
 use Illuminate\Support\ServiceProvider;
+use Xtra\Logics\Auth\DefaultXtraAuthentication;
 
 class XtraFrameworkProvider extends ServiceProvider
 {
@@ -52,6 +53,18 @@ class XtraFrameworkProvider extends ServiceProvider
             __DIR__.'/../config/xtra-framework.php', 'xtra-framework'
         );
 
+        $this->registerServiceIntoContainer();
+
         $this->app->make('Xtra\Controllers\LoginController');
+    }
+
+    /**
+     * Registering service into servie container
+     */
+    private function registerServiceIntoContainer() {
+
+        $this->app->singleton('Xtra\Authentication', function ($app) {
+            return new DefaultXtraAuthentication();
+        });
     }
 }

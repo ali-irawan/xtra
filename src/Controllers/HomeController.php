@@ -21,6 +21,8 @@ class HomeController extends Controller
      * Default route handler
      */
     public function index(){
-        return view('xtra-view::templates.home');
+        // Currently only top navbar available
+        // TODO Need to add some options of navbar, top navbar, bottom navbar, or sidebar
+        return view('xtra-view::templates.home.home-top-navbar');
     }
 }

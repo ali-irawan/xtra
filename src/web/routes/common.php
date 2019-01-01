@@ -4,14 +4,22 @@
  * These routes is for common page such as Login Page, Register Page, Maintenance Page, Guest Page, Home page after Login, etc.
  */
 
-Route::group(['namespace' => '\Xtra\Controllers'], function(){
+Route::group(['middleware'=> ['web'], 'namespace' => '\Xtra\Controllers'], function(){
 
     if (config(_XTRA_CONFIG_MODULE_LOGIN)) {
         $url = config(_XTRA_CONFIG_MODULE_LOGIN);
-        Route::get($url,'LoginController@index')->name('xtra-login-page');
-        Route::post($url,'LoginController@doLogin')->name('xtra-login-page');
+
+        Route::get($url,'LoginController@index')->name(_XTRA_ROUTE_LOGIN);
+        Route::post($url,'LoginController@doLogin')->name(_XTRA_ROUTE_LOGIN);
+
     }
 
+    if (config(_XTRA_CONFIG_MODULE_LOGOUT)) {
+        $url = config(_XTRA_CONFIG_MODULE_LOGOUT);
+        Route::get($url,'LoginController@logout')->name(_XTRA_ROUTE_LOGOUT);
+    }
+
+    Route::get('/xtra-home','HomeController@index')->name('xtra-home-page');
 
     // TODO the xtra-tenant route, should can be configured
     Route::get('/xtra-tenant','TenantController@index')->name('xtra-tenants-page');
