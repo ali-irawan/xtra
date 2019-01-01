@@ -2,7 +2,7 @@
 Xtra Framework
 
 ## Goals
-This framework is intended to help build most usually needed features
+This framework is intended to help build most usually needed features. The main goal is getting works done faster.
 
 * Works for most popular CSS Frameworks (Bootstrap, etc.)
 * Authentication UI (Login, Register, etc. compatibles with Laravel Users)
@@ -46,4 +46,4 @@ For more guide see the wiki [Xtra Framework Wiki](https://github.com/ali-irawan/
 ## Contributors
 [Ali Irawan](https://github.com/ali-irawan) ([boylevantz@gmail.com](mailto:boylevantz@gmail.com))
 
-Any contributors please pm me!
+Any contributors (features, code, or documentation) please pm me!

@@ -1,6 +1,7 @@
 {
   "name": "ali-irawan/xtra",
   "description": "Xtra framework, give you extra app generator, code generation, scaffolding",
+  "keywords" : ["scaffolding","generation","laravel","xtra","code generation"],
   "type": "library",
   "support": {
     "issues": "https://github.com/ali-irawan/xtra/issues",
