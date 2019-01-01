@@ -59,7 +59,7 @@ class LoginController extends Controller
         // Login fails
         return redirect(route('xtra-login-page'))
             ->withErrors([
-                'email' => 'Email and password dit not match',
+                'email' => 'Email and password did not match',
             ])
             ->withInput();
     }
