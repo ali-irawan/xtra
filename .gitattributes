@@ -1,1 +1,4 @@
 linguist-language=PHP
+src/web/assets/bootstrap linguist-vendored
+src/web/assets/jquery linguist-vendored
+src/web/assets/xtra-themes linguist-vendored
