@@ -25,9 +25,9 @@ Not tested yet! :(
 ```
 composer require ali-irawan/xtra
 ```
-Run vendor publish command
+Run vendor publish command, for the first time
 ```
-php artisan vendor:publish
+php artisan vendor:publish --tag=xtra
 ```
 Then run your application
 ```
