@@ -35,11 +35,11 @@ class XtraFrameworkProvider extends ServiceProvider
         // This will register for vendor:publish for config customization
         $this->publishes([
             __DIR__.'/../config/xtra-framework.php' => config_path('xtra-framework.php'),
-        ]);
+        ],'xtra');
 
         $this->publishes([
             __DIR__.'/../web/assets' => public_path('xtra-assets'),
-        ]);
+        ], 'xtra');
     }
 
     /**
