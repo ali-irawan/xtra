@@ -8,7 +8,7 @@ This framework is intended to help build most usually needed features
 * Authentication UI (Login, Register, etc. compatibles with Laravel Users)
 * Role Permission Management UI
 * User / Group Management UI
-* Support single or multiple tenancy using [Laravel tenancy](https://github.com/hyn/multi-tenant)
+* Support single or multiple tenancy using [Laravel tenancy](https://github.com/hyn/multi-tenant) - **coming soon**
 * Administration Panel
 * Code Generator
 
