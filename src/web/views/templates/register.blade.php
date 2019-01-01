@@ -1,5 +1,5 @@
 @extends("xtra-view::layouts.basic")
-@section("title","Login")
+@section("title","Register")
 @section("content")
     <div class="container xtra-container">
 

@@ -8,6 +8,7 @@
 
 namespace Xtra\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
 /**
@@ -22,5 +23,16 @@ class LoginController extends Controller
      */
     public function index(){
         return view('xtra-view::templates.login');
+    }
+
+    /**
+     * Handling login POST
+     */
+    public function doLogin(Request $request){
+        $username = $request->get('username');
+        $password = $request->get('password');
+
+        echo $username;
+        echo $password;
     }
 }

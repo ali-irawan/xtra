@@ -9,6 +9,7 @@ Route::group(['namespace' => '\Xtra\Controllers'], function(){
     if (config(_XTRA_CONFIG_MODULE_LOGIN)) {
         $url = config(_XTRA_CONFIG_MODULE_LOGIN);
         Route::get($url,'LoginController@index')->name('xtra-login-page');
+        Route::post($url,'LoginController@doLogin')->name('xtra-login-page');
     }
 
 

@@ -21,7 +21,6 @@ This framework is intended to help build most usually needed features
 * [Bootstrap CSS](https://getbootstrap.com/) version 4.2.1
 * [jQuery](https://jquery.com/) version 3.2
 
-
 ## Contributors
 [Ali Irawan](https://github.com/ali-irawan) ([boylevantz@gmail.com](mailto:boylevantz@gmail.com))
 
