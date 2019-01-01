@@ -21,6 +21,10 @@ class XtraFrameworkProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/../web/routes/common.php');
         $this->loadViewsFrom(__DIR__.'/../web/views', 'xtra-view');
+
+        $this->publishes([
+            __DIR__.'/../config/xtra-framework.php' => config_path('xtra-framework.php'),
+        ]);
     }
 
     /**

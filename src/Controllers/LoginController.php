@@ -21,6 +21,6 @@ class LoginController extends Controller
      * Default route handler
      */
     public function index(){
-
+        return view('xtra-view::templates.login');
     }
 }
