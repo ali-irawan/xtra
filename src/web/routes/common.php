@@ -6,8 +6,11 @@
 
 Route::group(['namespace' => '\Xtra\Controllers'], function(){
 
-    // TODO the xtra-login route, should can be configured
-    Route::get('/xtra-login','LoginController@index')->name('xtra-login-page');
+    if (config(_XTRA_CONFIG_MODULE_LOGIN)) {
+        $url = config(_XTRA_CONFIG_MODULE_LOGIN);
+        Route::get($url,'LoginController@index')->name('xtra-login-page');
+    }
+
 
     // TODO the xtra-tenant route, should can be configured
     Route::get('/xtra-tenant','TenantController@index')->name('xtra-tenants-page');
