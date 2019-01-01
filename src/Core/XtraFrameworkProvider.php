@@ -37,9 +37,12 @@ class XtraFrameworkProvider extends ServiceProvider
             __DIR__.'/../config/xtra-framework.php' => config_path('xtra-framework.php'),
         ],'xtra');
 
+        // Publishing assets
         $this->publishes([
             __DIR__.'/../web/assets' => public_path('xtra-assets'),
         ], 'xtra');
+
+        $this->prepareMenuConfig();
     }
 
     /**
@@ -66,5 +69,12 @@ class XtraFrameworkProvider extends ServiceProvider
         $this->app->singleton('Xtra\Authentication', function ($app) {
             return new DefaultXtraAuthentication();
         });
+    }
+
+    private function prepareMenuConfig(){
+        // Creating YAML in app_path
+        $this->publishes([
+            __DIR__.'/../config/menu.yaml' => app_path('xtra/menu.yaml'),
+        ],'xtra');
     }
 }
