@@ -1,13 +1,13 @@
 {
   "name": "ali-irawan/xtra",
-  "description": "Xtra framework, give you extra app generator, code gen scafollding",
+  "description": "Xtra framework, give you extra app generator, code gen scaffolding",
   "type": "library",
   "support": {
     "issues": "https://github.com/ali-irawan/xtra/issues",
     "source": "https://github.com/ali-irawan/xtra"
   },
   "require": {
-
+    "php": "^7.1.3"
   },
   "require-dev": {
     "laravel/laravel": "^5.7"
