@@ -1,16 +1,35 @@
 {
-    "name": "ali-irawan/xtra",
-    "description": "Xtra framework, give you extra app generator, code gen scafollding",
-    "type": "library",
-    "require": {
-        "laravel/laravel": "^5.7"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Ali Irawan",
-            "email": "boylevantz@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev"
+  "name": "ali-irawan/xtra",
+  "description": "Xtra framework, give you extra app generator, code gen scafollding",
+  "type": "library",
+  "support": {
+    "issues": "https://github.com/ali-irawan/xtra/issues",
+    "source": "https://github.com/ali-irawan/xtra"
+  },
+  "require": {
+
+  },
+  "require-dev": {
+    "laravel/laravel": "^5.7"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ali Irawan",
+      "email": "boylevantz@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Xtra\\": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Xtra\\Core\\XtraFrameworkProvider"
+      ]
+    }
+  }
 }

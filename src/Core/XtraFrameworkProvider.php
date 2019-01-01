@@ -19,8 +19,8 @@ class XtraFrameworkProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__.'/routes/common.php');
-        $this->loadViewsFrom(__DIR__.'/views', 'xtra-view');
+        $this->loadRoutesFrom(__DIR__.'/../web/routes/common.php');
+        $this->loadViewsFrom(__DIR__.'/../web/views', 'xtra-view');
     }
 
     /**
