@@ -12,6 +12,7 @@ Route::group(['middleware'=> ['web'], 'namespace' => '\Xtra\Controllers'], funct
         Route::get($url,'LoginController@index')->name(_XTRA_ROUTE_LOGIN);
         Route::post($url,'LoginController@doLogin')->name(_XTRA_ROUTE_LOGIN);
 
+        Route::get($url,'LoginController@index')->name(_XTRA_ROUTE_DEFAULT_LARAVEL_LOGIN);
     }
 
     if (config(_XTRA_CONFIG_MODULE_LOGOUT)) {

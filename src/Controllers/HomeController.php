@@ -16,6 +16,16 @@ use Illuminate\Routing\Controller;
  */
 class HomeController extends Controller
 {
+    /**
+     * the home page is restricted
+     * HomeController constructor.
+     */
+    public function __construct()
+    {
+        if(config(_XTRA_CONFIG_HOMEPAGE_RESTRICTED)) {
+            $this->middleware('auth');
+        }
+    }
 
     /**
      * Default route handler

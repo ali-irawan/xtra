@@ -20,11 +20,18 @@
          "tenant" => "/xtra-tenant",
          "role" => "/xtra-role",
          "user" => "/xtra-user",
-         "user-group" => "/xtra-user-group"
+         "user_group" => "/xtra-user-group"
      ],
 
-     "home-page" => [
+     "home_page" => [
+
+         // Whether to put navbar or not
          "navbar" => true,
-         "navbar-type" => 'top',
+
+         // Navbar type, currently only 'top' is supported
+         "navbar_type" => 'top',
+
+         // Restricted true, means the home page is restricted for authenticated users only
+         "restricted" => true,
      ]
  ];
