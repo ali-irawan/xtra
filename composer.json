@@ -1,0 +1,16 @@
+{
+    "name": "ali-irawan/xtra",
+    "description": "Xtra framework, give you extra app generator, code gen scafollding",
+    "type": "library",
+    "require": {
+        "laravel/laravel": "^5.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Irawan",
+            "email": "boylevantz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
