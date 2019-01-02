@@ -57,8 +57,6 @@ class XtraFrameworkProvider extends ServiceProvider
         );
 
         $this->registerServiceIntoContainer();
-
-        $this->app->make('Xtra\Controllers\LoginController');
     }
 
     /**
@@ -77,4 +75,5 @@ class XtraFrameworkProvider extends ServiceProvider
             __DIR__.'/../config/menu.yaml' => app_path('xtra/menu.yaml'),
         ],'xtra');
     }
+
 }
