@@ -10,9 +10,23 @@ namespace Xtra\Core;
 
 use Illuminate\Support\ServiceProvider;
 use Xtra\Logics\Auth\DefaultXtraAuthentication;
+use Xtra\Logics\Common\DefaultXtraRegistration;
 
 class XtraFrameworkProvider extends ServiceProvider
 {
+    /**
+     * Include required files
+     */
+    protected function includeFiles() {
+
+        // Include helpers.php
+        require_once __DIR__.'/../helpers/helpers.php';
+
+        // Include define.php
+        require_once __DIR__.'/../web/define.php';
+
+    }
+
     /**
      * Bootstrap the application services.
      *
@@ -20,11 +34,6 @@ class XtraFrameworkProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Include helpers.php
-        require_once __DIR__.'/../helpers/helpers.php';
-
-        // Include define.php
-        require_once __DIR__.'/../web/define.php';
 
         // This will load common routes
         $this->loadRoutesFrom(__DIR__.'/../web/routes/common.php');
@@ -52,6 +61,7 @@ class XtraFrameworkProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->includeFiles();
         $this->mergeConfigFrom(
             __DIR__.'/../config/xtra-framework.php', 'xtra-framework'
         );
@@ -64,8 +74,12 @@ class XtraFrameworkProvider extends ServiceProvider
      */
     private function registerServiceIntoContainer() {
 
-        $this->app->singleton('Xtra\Authentication', function ($app) {
+        $this->app->singleton( _XTRA_LOGIC_AUTH, function ($app) {
             return new DefaultXtraAuthentication();
+        });
+
+        $this->app->singleton( _XTRA_LOGIC_REGISTRATION, function ($app) {
+            return new DefaultXtraRegistration();
         });
     }
 

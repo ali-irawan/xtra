@@ -9,7 +9,21 @@
 namespace Xtra\Logics\Common;
 
 
-class DefaultXtraRegistration
+use Xtra\Core\Errors\FeatureNotImplementedException;
+
+class DefaultXtraRegistration implements XtraRegistration
 {
 
+    /**
+     * Register user
+     * @param $name name
+     * @param $email email
+     * @param $password password
+     * @return mixed return the user object
+     */
+    public function register($name, $email, $password)
+    {
+        // TODO: Implement register() method.
+        throw new FeatureNotImplementedException();
+    }
 }

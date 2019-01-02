@@ -6,29 +6,24 @@
  * Time: 1:45 PM
  */
 
-namespace Xtra\Logics\Auth;
+namespace Xtra\Logics\Common;
 
 /**
- * Standard interface for authentication
+ * Standard interface for registration
  *
  * @author Ali Irawan (boylevantz@gmail.com)
- * @package Xtra\Logics\Auth
+ * @package Xtra\Logics\Common
  */
-interface XtraAuthentication
+interface XtraRegistration
 {
     /**
-     * This function should return boolean value whether the username(email) and password given is passed the authentication
+     * Register user
+     * @param $name name
      * @param $email email
      * @param $password password
-     * @return mixed return object if passed the authentication, otherwise return null
+     * @return mixed return the user object
      */
-    public function authenticate ( $email, $password );
+    public function register ( $name, $email, $password );
 
-    /**
-     * Get the user object model based on the given user_id
-     * @param $user_id unique user id
-     * @return mixed An user object, define in auth (providers.users.model)
-     */
-    public function getUser ( $user_id );
 
 }

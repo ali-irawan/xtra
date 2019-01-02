@@ -24,6 +24,7 @@ abstract class XtraFrameworkModuleProvider extends ServiceProvider
      */
     public function boot()
     {
+        /*
         require_once $this->currentDirectory().'/../define.php';
         require_once $this->currentDirectory().'/../helpers.php';
 
@@ -34,6 +35,7 @@ abstract class XtraFrameworkModuleProvider extends ServiceProvider
 
         // This will load views templates
         $this->loadViewsFrom($this->currentDirectory().'/../resources/views',$this->getViewNamespace());
+        */
     }
 
     /**

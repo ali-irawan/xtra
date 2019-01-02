@@ -39,7 +39,7 @@ class LoginController extends Controller
         $validator_result = ValidatorUtil::validateInput( $validator, $request );
 
         if ($validator_result) {
-            return redirect(route('xtra-login-page'))
+            return redirect(route(_XTRA_ROUTE_LOGIN))
                 ->withErrors($validator)
                 ->withInput();
         }
@@ -57,7 +57,7 @@ class LoginController extends Controller
         }
 
         // Login fails
-        return redirect(route('xtra-login-page'))
+        return redirect(route(_XTRA_ROUTE_LOGIN))
             ->withErrors([
                 'email' => 'Email and password did not match',
             ])
@@ -91,7 +91,7 @@ class LoginController extends Controller
      * @return \Illuminate\Config\Repository|mixed
      */
     private function redirectTo() {
-        return redirect(route('xtra-home-page'));
+        return redirect(route(_XTRA_ROUTE_HOME));
     }
 
     /**
@@ -99,6 +99,6 @@ class LoginController extends Controller
      * @see \Xtra\Logics\Auth\XtraAuthentication
      */
     protected function getAuthenticationHandler() {
-        return \App::make('Xtra\Authentication');
+        return \App::make( _XTRA_LOGIC_AUTH);
     }
 }
