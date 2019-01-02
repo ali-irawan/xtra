@@ -19,6 +19,7 @@
                         <span class="text-danger">{{ $errors->first('password') }}</span>
                     </div>
                     <button class="btn btn-primary">Sign In</button>
+                    <a role="button" class="btn btn-link" href="{{ route(_XTRA_ROUTE_REGISTER) }}">Register</a>
                 </form>
 
             </div>
