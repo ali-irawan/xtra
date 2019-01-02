@@ -11,3 +11,4 @@ package-lock.json
 .sass-cache/
 phpDocumentor.phar
 /docs/
+/CACHE_DIR/

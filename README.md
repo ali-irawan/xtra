@@ -44,7 +44,7 @@ I am using [phpDoc](https://phpdoc.org), you will need to download the PHAR and 
 
 Run this command to specify **src** as the source folder and **docs** as the output folder
 ```
-php phpDocumentor.phar -d src -t docs --template="responsive-twig"
+php phpDocumentor.phar -d src -t docs --template="responsive-twig" --cache-folder CACHE_DIR
 ```
 ## Dependencies
 
