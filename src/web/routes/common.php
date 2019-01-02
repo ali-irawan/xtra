@@ -19,8 +19,12 @@ Route::group(['middleware'=> ['web'], 'namespace' => '\Xtra\Controllers'], funct
         $url = config(_XTRA_CONFIG_MODULE_LOGOUT);
         Route::get($url,'LoginController@logout')->name(_XTRA_ROUTE_LOGOUT);
     }
+    if (config(_XTRA_CONFIG_MODULE_HOME)) {
+        $url = config(_XTRA_CONFIG_MODULE_HOME);
 
-    Route::get('/xtra-home','HomeController@index')->name('xtra-home-page');
+        Route::get($url,'HomeController@index')->name('xtra-home-page');
+    }
+
 
     // TODO the xtra-tenant route, should can be configured
     Route::get('/xtra-tenant','TenantController@index')->name('xtra-tenants-page');
