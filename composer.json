@@ -8,8 +8,7 @@
     "source": "https://github.com/ali-irawan/xtra"
   },
   "require": {
-    "php": "^7.1.3",
-    "symfony/yaml": "^4.2"
+    "php": "^7.1.3"
   },
   "require-dev": {
     "laravel/laravel": "^5.7"

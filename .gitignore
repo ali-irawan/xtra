@@ -11,4 +11,3 @@ package-lock.json
 .sass-cache/
 phpDocumentor.phar
 /docs/
-.idea/xtra.iml

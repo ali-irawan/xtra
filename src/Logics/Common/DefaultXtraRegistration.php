@@ -33,7 +33,7 @@ class DefaultXtraRegistration implements XtraRegistration
     private function performRegister(){
 
     }
-    
+
     private function sendActivationEmail(){
 
     }
