@@ -9,3 +9,6 @@ composer.lock
 /node_modules/
 package-lock.json
 .sass-cache/
+phpDocumentor.phar
+/docs/
+.idea/xtra.iml
