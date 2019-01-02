@@ -8,7 +8,10 @@
 
 namespace Xtra\Core\Modular;
 
-
+/**
+ * Interface Menu, implementing menu behavior, each menu can have sub menus
+ * @package Xtra\Core\Modular
+ */
 interface Menu
 {
     /**

@@ -1,5 +1,14 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Ali Irawan (boylevantz@gmail.com)
+ * Date: 1/2/19
+ * Time: 9:06 PM
+ */
 
+/**
+ * This file will list all defined property
+ */
 // XTRA CONFIGURATION
 define('_XTRA_CONFIG_NAME','xtra-framework');
 

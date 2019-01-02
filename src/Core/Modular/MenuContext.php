@@ -8,9 +8,16 @@
 
 namespace Xtra\Core\Modular;
 
-
+/**
+ * Class MenuContext will manage all menus in applications
+ * @package Xtra\Core\Modular
+ */
 class MenuContext
 {
+    /**
+     * Array menu holder
+     * @var array
+     */
     private $menu_list;
 
     /**

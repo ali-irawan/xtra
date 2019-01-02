@@ -11,9 +11,18 @@ namespace Xtra\Core\Errors;
 
 use Xtra\Core\XtraException;
 
+/**
+ * Class FeatureNotImplementedException is used for determine type of exception if the feature is not implemented yet
+ * @author Ali Irawan (boylevantz@gmail.com)
+ * @package Xtra\Core\Errors
+ */
 class FeatureNotImplementedException extends XtraException
 {
-    // Redefine the exception so message isn't optional
+    /**
+     * FeatureNotImplementedException constructor.
+     * @param int $code
+     * @param Exception|null $previous
+     */
     public function __construct($code = 100, Exception $previous = null) {
         // some code
 
@@ -21,7 +30,10 @@ class FeatureNotImplementedException extends XtraException
         parent::__construct('Featured is not implemented yet', $code, $previous);
     }
 
-    // custom string representation of object
+    /**
+     * Get the exception message
+     * @return string representation of the exception
+     */
     public function __toString() {
         return __CLASS__ . ": [{$this->code}]: {$this->message}\n";
     }

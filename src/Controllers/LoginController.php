@@ -31,7 +31,9 @@ class LoginController extends Controller
     }
 
     /**
-     * Handling login POST
+     * Handling login request
+     * @param Request $request
+     * @return $this|\Illuminate\Config\Repository|mixed
      */
     public function doLogin(Request $request){
 

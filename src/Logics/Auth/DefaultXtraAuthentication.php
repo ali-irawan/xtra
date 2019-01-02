@@ -8,15 +8,18 @@
 
 namespace Xtra\Logics\Auth;
 
-
 use Xtra\Core\Errors\AuthenticationException;
 use Xtra\Core\Errors\FeatureNotImplementedException;
 use Xtra\Core\FeatureImplementCheck;
 
+/**
+ * efault implementation DefaultXtraAuthentication for XtraAuthentication
+ * @package Xtra\Logics\Auth
+ */
 class DefaultXtraAuthentication implements XtraAuthentication, FeatureImplementCheck
 {
     /**
-     * @inheritDoc
+     * Implements the check whether feature implemented or not
      */
     public function checkFeatureImplemented()
     {
@@ -26,7 +29,10 @@ class DefaultXtraAuthentication implements XtraAuthentication, FeatureImplementC
     }
 
     /**
-     * @inheritDoc
+     * Implements authenticate
+     * @param email $email
+     * @param password $password
+     * @return null
      */
     public function authenticate($email, $password)
     {
@@ -54,7 +60,10 @@ class DefaultXtraAuthentication implements XtraAuthentication, FeatureImplementC
     }
 
     /**
-     * @inheritDoc
+     * Get user data based on user_id
+     * @param unique $user_id
+     * @return mixed
+     * @throws AuthenticationException
      */
     public function getUser($user_id)
     {

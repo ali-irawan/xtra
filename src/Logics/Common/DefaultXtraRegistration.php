@@ -8,9 +8,12 @@
 
 namespace Xtra\Logics\Common;
 
-
 use Xtra\Core\Errors\FeatureNotImplementedException;
 
+/**
+ * Default implementation DefaultXtraRegistration for XtraRegistration
+ * @package Xtra\Logics\Common
+ */
 class DefaultXtraRegistration implements XtraRegistration
 {
 
@@ -30,10 +33,16 @@ class DefaultXtraRegistration implements XtraRegistration
         $this->sendActivationEmail();
     }
 
+    /**
+     * Perform registration to database
+     */
     private function performRegister(){
 
     }
 
+    /**
+     * Send the activation email
+     */
     private function sendActivationEmail(){
 
     }

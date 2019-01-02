@@ -12,6 +12,11 @@ use Illuminate\Support\ServiceProvider;
 use Xtra\Logics\Auth\DefaultXtraAuthentication;
 use Xtra\Logics\Common\DefaultXtraRegistration;
 
+/**
+ * Default XtraFrameworkProvider, this provider will be make the framework works
+ * @author Ali Irawan (boylevantz@gmail.com)
+ * @package Xtra\Core
+ */
 class XtraFrameworkProvider extends ServiceProvider
 {
     /**
@@ -83,6 +88,9 @@ class XtraFrameworkProvider extends ServiceProvider
         });
     }
 
+    /**
+     * Preparing the menu configuration
+     */
     private function prepareMenuConfig(){
         // Creating YAML in app_path
         $this->publishes([

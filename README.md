@@ -38,6 +38,14 @@ Then open this URL on your browser
 http://localhost:8000/xtra-login
 ```
 For more guide see the wiki [Xtra Framework Wiki](https://github.com/ali-irawan/xtra/wiki)
+
+## Documentation
+I am using [phpDoc](https://phpdoc.org), you will need to download the PHAR and place it in the root of your project folder
+
+Run this command to specify **src** as the source folder and **docs** as the output folder
+```
+php phpDocumentor.phar -d src -t docs --template="responsive-twig"
+```
 ## Dependencies
 
 * [Bootstrap CSS](https://getbootstrap.com/) version 4.2.1
