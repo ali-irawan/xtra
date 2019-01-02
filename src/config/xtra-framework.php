@@ -17,10 +17,12 @@
          "login" => "/xtra-login",
          "logout" => "/xtra-logout",
          "home" => "/xtra-home",
-         "tenant" => "/xtra-tenant",
-         "role" => "/xtra-role",
-         "user" => "/xtra-user",
-         "user_group" => "/xtra-user-group"
+         "register" => "/xtra-register",
+
+         // "tenant" => "/xtra-tenant",
+         // "role" => "/xtra-role",
+         // "user" => "/xtra-user",
+         // "user_group" => "/xtra-user-group"
      ],
 
      "home_page" => [

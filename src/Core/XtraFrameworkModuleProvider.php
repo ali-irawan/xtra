@@ -15,6 +15,7 @@ abstract class XtraFrameworkModuleProvider extends ServiceProvider
 {
     public abstract function getViewNamespace();
     public abstract function registerServices();
+    public abstract function currentDirectory();
 
     /**
      * Bootstrap the application services.
@@ -23,16 +24,16 @@ abstract class XtraFrameworkModuleProvider extends ServiceProvider
      */
     public function boot()
     {
-        require_once __DIR__.'/../define.php';
-        require_once __DIR__.'/../helpers.php';
+        require_once $this->currentDirectory().'/../define.php';
+        require_once $this->currentDirectory().'/../helpers.php';
 
         // This will load common routes
-        $this->loadRoutesFrom(__DIR__.'/../routes.php');
+        $this->loadRoutesFrom($this->currentDirectory().'/../routes.php');
 
 
 
         // This will load views templates
-        $this->loadViewsFrom(__DIR__.'/../resources/views',$this->getViewNamespace());
+        $this->loadViewsFrom($this->currentDirectory().'/../resources/views',$this->getViewNamespace());
     }
 
     /**

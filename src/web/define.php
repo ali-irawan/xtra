@@ -11,6 +11,7 @@ define('_XTRA_CONFIG_CSS_BOOTSTRAP','bootstrap');
 define('_XTRA_CONFIG_MODULE_LOGIN','xtra-framework.modules.login');
 define('_XTRA_CONFIG_MODULE_LOGOUT','xtra-framework.modules.logout');
 define('_XTRA_CONFIG_MODULE_HOME','xtra-framework.modules.home');
+define('_XTRA_CONFIG_MODULE_REGISTER','xtra-framework.modules.register');
 
 // CONFIG home page
 define('_XTRA_CONFIG_HOMEPAGE_RESTRICTED','xtra-framework.home_page.restricted');
@@ -24,3 +25,4 @@ define('_XTRA_ROUTE_DEFAULT_LARAVEL_LOGIN','login');
 define('_XTRA_ROUTE_LOGIN','xtra-login-page');
 define('_XTRA_ROUTE_LOGOUT','xtra-logout-page');
 define('_XTRA_ROUTE_HOME','xtra-home-page');
+define('_XTRA_ROUTE_REGISTER','xtra-register-page');

@@ -6,7 +6,7 @@
         <div class="row">
             <div class="offset-4 col-4">
 
-                <form action="{{ route('xtra-login-page') }}" method="post">
+                <form action="{{ route(_XTRA_ROUTE_LOGIN) }}" method="post">
                     {{ csrf_field() }}
                     <div class="form-group">
                         <label>Email</label>
