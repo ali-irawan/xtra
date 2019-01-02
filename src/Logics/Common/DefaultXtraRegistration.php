@@ -25,5 +25,16 @@ class DefaultXtraRegistration implements XtraRegistration
     {
         // TODO: Implement register() method.
         throw new FeatureNotImplementedException();
+
+        $this->performRegister();
+        $this->sendActivationEmail();
+    }
+
+    private function performRegister(){
+
+    }
+    
+    private function sendActivationEmail(){
+
     }
 }

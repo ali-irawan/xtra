@@ -18,11 +18,6 @@
          "logout" => "/xtra-logout",
          "home" => "/xtra-home",
          "register" => "/xtra-register",
-
-         // "tenant" => "/xtra-tenant",
-         // "role" => "/xtra-role",
-         // "user" => "/xtra-user",
-         // "user_group" => "/xtra-user-group"
      ],
 
      "home_page" => [
