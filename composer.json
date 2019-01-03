@@ -11,7 +11,8 @@
     "php": "^7.1.3"
   },
   "require-dev": {
-    "laravel/laravel": "^5.7"
+    "laravel/laravel": "^5.7",
+    "phpunit/phpunit": "^7"
   },
   "license": "MIT",
   "authors": [
