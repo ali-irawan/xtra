@@ -7,4 +7,4 @@ php:
   - nightly
 env:
   global:
-    FRAMEWORK_CODE=ANDROMEDA
+    - FRAMEWORK_CODE=ANDROMEDA
