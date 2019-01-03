@@ -8,3 +8,9 @@ php:
 env:
   global:
     - FRAMEWORK_CODE=ANDROMEDA
+branches:
+  only:
+    master
+before_install:
+  - composer install
+script: vendor/bin/phpunit tests
