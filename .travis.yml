@@ -5,3 +5,6 @@ php:
   - '7.1'
   - '7.2'
   - nightly
+env:
+  global:
+    FRAMEWORK_CODE=ANDROMEDA
