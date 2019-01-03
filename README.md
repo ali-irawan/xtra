@@ -1,6 +1,8 @@
 # xtra
 Xtra Framework
 
+[![Build Status](https://travis-ci.org/ali-irawan/xtra.svg?branch=master)](https://travis-ci.org/ali-irawan/xtra)
+
 ## Goals
 This framework is intended to help build most usually needed features. The main goal is getting works done faster.
 
